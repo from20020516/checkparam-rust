@@ -1,0 +1,4 @@
+.env*
+*.sql
+Cargo.lock
+target/
