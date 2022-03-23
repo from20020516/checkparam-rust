@@ -8,8 +8,8 @@ fn main() {
     let new_user = NewUser {
         name: String::from("new_user"),
     };
-    diesel::insert_into(users_schema::dsl::users)
+    let result = diesel::insert_into(users_schema::dsl::users)
         .values(new_user)
-        .execute(&connection)
-        .expect("Error saving new user");
+        .execute(&connection);
+    println!("{:?}", result);
 }
