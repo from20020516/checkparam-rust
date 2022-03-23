@@ -11,8 +11,8 @@
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=hello_remote_world",
-                    "--package=hello_remote_world",
+                    "--bin=checkparam",
+                    "--package=checkparam",
                     "--manifest-path=Cargo.toml"
                 ],
                 "filter": {

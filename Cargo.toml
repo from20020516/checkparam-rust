@@ -1,8 +1,13 @@
 [package]
-name = "hello_remote_world"
+name = "checkparam"
 version = "0.1.0"
 authors = ["VS Code <vscode@microsoft.com>"]
+edition = "2021"
 
 [[bin]]
-name = "hello_remote_world"
-path = "test-project/src/main.rs"
+name = "checkparam"
+path = "src/bin/*.rs"
+
+[dependencies]
+diesel = { version = "1.4.8", features = ["mysql"] }
+dotenv = "0.15.0"

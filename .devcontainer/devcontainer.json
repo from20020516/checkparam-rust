@@ -29,6 +29,7 @@
 		"ms-vsliveshare.vsliveshare",
 		"ms-azuretools.vscode-docker"
 	],
+	"initializeCommand": "cp -n .env.sample .env || true",
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [ 5432 ]
 	// Use 'postCreateCommand' to run commands after the container is created.

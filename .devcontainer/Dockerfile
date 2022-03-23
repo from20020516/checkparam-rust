@@ -15,3 +15,5 @@ COPY --from=amazon/aws-cli /usr/local/aws-cli/v2/current /usr/local
 RUN apt update \
     && export DEBIAN_FRONTEND=noninteractive \
     && apt -y install default-mysql-client
+
+RUN cargo install diesel_cli
